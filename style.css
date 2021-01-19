@@ -8,27 +8,46 @@ header{
     justify-content: center;
     color: #0065FC;
 }
-
-header a{
-    color: #0065FC;
-    text-decoration: none;
-    justify-content: space-between;
-    display: inline-block;
-    font-size: 10px;
-}
-
 header div{
     width: 1310px;
     display: flex;
     justify-content:space-between;
+    height: 60px;
+}
+.logo-header{
+    width: auto;
+}
+
+.menu{
+    display: inline-block;
+    width: auto;
+}
+header a{
+    color: #000000;
+    text-decoration: none;
+    justify-content: space-between;
+    display: inline;
+    font-size: 10px;
 }
 
 ul li{
     list-style: none;
-    display: inline-block;
+    display: inline;
     padding: 0 30px;
     position: relative;
+    
 }
+li a:active{
+    color: #0065FC;
+    border-top: 2px solid;
+    
+}
+li a:hover{
+    color: #0065FC;
+    border-top: 2px solid;
+    padding-top: 10px;
+}
+
 section{
     background-color: #ffffff;
     display: flex;
