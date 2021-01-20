@@ -74,5 +74,120 @@ section{
     font-size: 10px;
 }
 .searchbar{
+    height: 51px;    
+}
+.fas {
+
+}
+
+.filtres
+{
+    flex-flow: row wrap;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     
+    
+}
+.filtres h3{
+    font-size: 13px;
+    display: flex;
+    
+}
+.Economie{
+ 	background:white;
+	border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    flex: auto;
+    width: 193px;
+}
+.Economie i{
+    display: flex;
+    padding: 14px;
+	background:#deebff;
+	border-radius: 25px;
+    color: #0065FC;
+}
+.Economie a{
+    color: black;
+    width: 14px;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+}
+
+.Familial{
+    background:white;
+	border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    flex: auto;
+    width: 193px;
+}
+.Familial i{
+    display: flex;
+    padding: 14px;
+	background:#deebff;
+	border-radius: 25px;
+    color: #0065FC;
+}
+.Familial a{
+    color: black;
+    width: 14px;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+}
+.Romantique{
+    background:white;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    flex: auto;
+    width: 193px;
+    }
+.Romantique i{
+   display: flex;
+   padding: 14px;
+   background:#deebff;
+   border-radius: 25px;
+   color: #0065FC;
+}
+.Romantique a{
+   color: black;
+   width: 14px;
+   margin: auto;
+   text-decoration: none;
+   display: flex;
+}
+.Animaux-autorisés{
+    background:white;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    flex: auto;
+    width: 193px;
+}
+.Animaux-autorisés i{
+   display: flex;
+   padding: 14px;
+   background:#deebff;
+   border-radius: 25px;
+   color: #0065FC;
+}
+.Animaux-autorisés a{
+   color: black;
+   width: 14px;
+   margin: auto;
+   text-decoration: none;
+   display: flex;
+}
+
+.info{
+    display: flex;
+}
+.info p{
+    display: flex;
 }
