@@ -1,0 +1,199 @@
+body{
+    font-family: 'raleway', sans-serif;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    width: 1310px;
+    margin: 0 auto;
+    color: #0065FC;
+}
+header div{
+    width: 1310px;
+    display: flex;
+    justify-content:space-between;
+    height: 60px;
+}
+.logo-header{
+    width: auto;
+}
+
+.menu{
+    display: inline-block;
+    width: auto;
+}
+header a{
+    color: #000000;
+    text-decoration: none;
+    justify-content: space-between;
+    display: inline;
+    font-size: 10px;
+}
+
+header ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 30px;
+    position: relative;
+    
+}
+header li a:active{
+    color: #0065FC;
+    border-top: 2px solid;
+    
+}
+header li a:hover{
+    color: #0065FC;
+    border-top: 2px solid;
+    padding-top: 10px;
+}
+
+section{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    width: 1310px;
+    margin: 0 auto;
+}
+.section1{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.titres-page h1{
+    font-size: 12px;
+
+}
+.titres-page p{
+    font-size: 10px;
+}
+.searchbar{
+    padding-bottom: 32px;
+}
+.fas{
+    border-radius: 12px 0px 0px 12px;
+    color: black;
+    background-color: #f2f2f2;
+    padding: 11.5px;
+}
+
+.searchbar input{
+    border: 1px solid #f2f2f2;
+    text-decoration-line: none;
+    padding: 11px;
+    font-weight: bold;
+    outline-color: #f2f2f2;
+}
+
+.searchbar button{
+    border: 1px solid #0000ff00;
+    border-radius: 0px 12px 12px 0px;
+    text-decoration-line: none;
+    color: white;
+    background-color: #0065fc;
+    padding: 11px;
+    font-weight: bold;
+}
+
+.filtres
+{
+    flex-flow: row wrap;
+    height: 50px;
+    align-items: center;
+    display: flex;   
+}
+
+.filtres ul{
+    display: flex;
+    padding-inline-start: 0px;
+    margin: 0 auto;
+}
+.filtres li{
+    display: flex;
+    margin-right: 25px;
+}
+.filtres h2{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.Economie{
+ 	background:white;
+	border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    width: 193px;
+    justify-content:space-between;
+    margin-right: 25px;
+}
+.Economie i{
+    display: flex;
+    padding: 14px;
+	background:#deebff;
+	border-radius: 25px;
+    color: #0065FC;
+}
+.Economie a{
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+    display: flex;
+}
+.info{
+    flex-flow: row wrap;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding-top: 36px;
+    padding-right: 11px;
+    padding-bottom: 38px;
+}
+.info p{
+    display: flex;
+}
+.info i{
+    display: flex;
+    border-radius: 25px;
+    border: 1px solid #d9d9d9;
+    padding: 14px;
+}
+.section2{
+    width: 880px;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 48px 41px 48px 41px;
+}
+.section2 h2{
+    justify-content: left;
+    font-size: 16px;
+}
+
+.item{
+    background-color: #ffffff;
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    padding:4px;
+    margin: 0;
+    
+}
+.item img{
+    width: 100%;
+    height: 70%;    
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+}
+.item h3{
+    display: flex;
+    font-size: 22px;
+}
+.div i{
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+}
