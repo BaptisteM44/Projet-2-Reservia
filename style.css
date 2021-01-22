@@ -179,7 +179,7 @@ section{
     height: 200px;
     border-radius: 25px;
     padding:4px;
-    margin: 0;
+    margin: 0px;
     
 }
 .item img{
@@ -187,13 +187,20 @@ section{
     height: 70%;    
     border-radius: 25px 25px 0px 0px;
     display: flex;
+    margin: 0px;
 }
 .item h3{
     display: flex;
     font-size: 22px;
+    margin: 0px;
 }
-.div i{
-    display: flex;
+.item i{
+    display: inline;
     flex-direction: row;
     color: #0065FC;
+    margin: 0px;
+    padding: 0px;
+}
+.item p{
+    margin: 0px;
 }
