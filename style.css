@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     font-family: 'raleway', sans-serif;
 }
@@ -180,7 +179,7 @@ section{
     height: 200px;
     border-radius: 25px;
     padding:4px;
-    margin: 0;
+    margin: 0px;
     
 }
 .item img{
@@ -188,207 +187,15 @@ section{
     height: 70%;    
     border-radius: 25px 25px 0px 0px;
     display: flex;
+    margin: 0px;
 }
 .item h3{
     display: flex;
     font-size: 22px;
+    margin: 0px;
 }
-.div i{
-    display: flex;
+.item i{
+    display: inline;
     flex-direction: row;
     color: #0065FC;
-=======
-body{
-    font-family: 'raleway', sans-serif;
-}
-
-header{
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    color: #0065FC;
-}
-header div{
-    width: 1310px;
-    display: flex;
-    justify-content:space-between;
-    height: 60px;
-}
-.logo-header{
-    width: auto;
-}
-
-.menu{
-    display: inline-block;
-    width: auto;
-}
-header a{
-    color: #000000;
-    text-decoration: none;
-    justify-content: space-between;
-    display: inline;
-    font-size: 10px;
-}
-
-ul li{
-    list-style: none;
-    display: inline;
-    padding: 0 30px;
-    position: relative;
-    
-}
-li a:active{
-    color: #0065FC;
-    border-top: 2px solid;
-    
-}
-li a:hover{
-    color: #0065FC;
-    border-top: 2px solid;
-    padding-top: 10px;
-}
-
-section{
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-}
-.section1{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 1310px;
-    
-}
-
-.titres-page{
-
-    
-}
-.titres-page h1{
-    font-size: 12px;
-
-}
-.titres-page p{
-    font-size: 10px;
-}
-.searchbar{
-    height: 51px;    
-}
-.fas {
-
-}
-
-.filtres
-{
-    flex-flow: row wrap;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    
-    
-}
-.filtres h3{
-    font-size: 13px;
-    display: flex;
-    
-}
-.Economie{
- 	background:white;
-	border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    display: flex;
-    flex: auto;
-    width: 193px;
-}
-.Economie i{
-    display: flex;
-    padding: 14px;
-	background:#deebff;
-	border-radius: 25px;
-    color: #0065FC;
-}
-.Economie a{
-    color: black;
-    width: 14px;
-    margin: auto;
-    text-decoration: none;
-    display: flex;
-}
-
-.Familial{
-    background:white;
-	border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    display: flex;
-    flex: auto;
-    width: 193px;
-}
-.Familial i{
-    display: flex;
-    padding: 14px;
-	background:#deebff;
-	border-radius: 25px;
-    color: #0065FC;
-}
-.Familial a{
-    color: black;
-    width: 14px;
-    margin: auto;
-    text-decoration: none;
-    display: flex;
-}
-.Romantique{
-    background:white;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    display: flex;
-    flex: auto;
-    width: 193px;
-    }
-.Romantique i{
-   display: flex;
-   padding: 14px;
-   background:#deebff;
-   border-radius: 25px;
-   color: #0065FC;
-}
-.Romantique a{
-   color: black;
-   width: 14px;
-   margin: auto;
-   text-decoration: none;
-   display: flex;
-}
-.Animaux-autorisés{
-    background:white;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    display: flex;
-    flex: auto;
-    width: 193px;
-}
-.Animaux-autorisés i{
-   display: flex;
-   padding: 14px;
-   background:#deebff;
-   border-radius: 25px;
-   color: #0065FC;
-}
-.Animaux-autorisés a{
-   color: black;
-   width: 14px;
-   margin: auto;
-   text-decoration: none;
-   display: flex;
-}
-
-.info{
-    display: flex;
-}
-.info p{
-    display: flex;
->>>>>>> main
 }
