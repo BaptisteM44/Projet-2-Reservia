@@ -5,7 +5,7 @@ body{
 header{
     background-color: #ffffff;
     display: flex;
-    width: 1310px;
+    width: 1340px;
     margin: 0 auto;
     color: #0065FC;
 }
@@ -53,7 +53,7 @@ section{
     background-color: #ffffff;
     display: flex;
     justify-content: left;
-    width: 1310px;
+    width: 1340px;
     margin: 0 auto;
 }
 .section1{
@@ -74,7 +74,7 @@ section{
 .searchbar{
     padding-bottom: 32px;
 }
-.fas{
+.fa-map-marker-alt{
     border-radius: 12px 0px 0px 12px;
     color: black;
     background-color: #f2f2f2;
@@ -125,9 +125,9 @@ section{
  	background:white;
 	border: 2px solid #d9d9d9;
     border-radius: 25px;
-    display: flex;
+    /* display: flex; */
     width: 193px;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     margin-right: 25px;
 }
 .Economie i{
@@ -156,10 +156,13 @@ section{
     display: flex;
 }
 .info i{
-    display: flex;
-    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
     border: 1px solid #d9d9d9;
-    padding: 14px;
+    text-align: center;
+    margin-right: 10px;
+    color: #0065FC;
 }
 .section2{
     width: 880px;
@@ -167,6 +170,7 @@ section{
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 48px 41px 48px 41px;
+    margin-right: 40px;
 }
 .section2 h2{
     justify-content: left;
@@ -179,7 +183,8 @@ section{
     height: 200px;
     border-radius: 25px;
     padding:4px;
-    margin: 0px;
+    margin: 16px;
+    display: inline-block;
     
 }
 .item img{
@@ -191,11 +196,28 @@ section{
 }
 .item h3{
     display: flex;
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px;
 }
 .item i{
     display: inline;
     flex-direction: row;
     color: #0065FC;
+    margin: 0px;
+    font-size: 11px;
+}
+.item p{
+    margin: 0px;
+    font-size: 13px;
+}
+.item-text{
+    margin-left: 16px;
+}
+
+aside{
+    width: 420px;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 48px 41px 48px 41px;
 }
