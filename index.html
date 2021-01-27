@@ -12,7 +12,6 @@
 <body><!-- début corps de page -->
       <!-- début entête de page -->
     <header>
-        <div>
             <div class="logo-header">
             <img src="images/logo/Reservia.svg">
             </div>
@@ -23,8 +22,7 @@
                     <li><a href="#Activités">Activités</a></li>
                     <li><a href="#S'inscrire">S'inscrire</a></li>
                 </ul>
-            </nav>    
-        </div>
+            </nav>  
     </header>
     <!-- fin entête de page -->
     <section>
@@ -40,23 +38,25 @@
                 </div>
                     <div class="filtres">
                         <ul>
-                            <li><h2>Filtres</h2></li>
+                            <li >
+                                <h3>Filtres</h3>
+                            </li>
                             <li class="Economie">
-                                <i class="fas fa-money-bill-wave"></i> <!--logo billet-->
-                                <a href="#"><h2>Economie</h2></a>
+                                <i class="fas fa-money-bill-wave filtres-logo"></i> <!--logo billet-->
+                                <a class="filtres-texte" href="#">Economie</a>
                             </li>
 
                             <li class="Economie">
-                                <i class="fas fa-child"></i> <!--logo enfant-->
-                                <a href="#"><h2>Familial</h2></a>
+                                <i class="fas fa-child filtres-logo"></i> <!--logo enfant-->
+                                <a class="filtres-texte" href="#">Familial</a>
                             </li>
                             <li class="Economie">
-                                <i class="fas fa-heart"></i> <!--logo coeur-->
-                                <a href="#"><h2>Romantique</h2></a>
+                                <i class="fas fa-heart filtres-logo"></i> <!--logo coeur-->
+                                <a class="filtres-texte" href="#">Romantique</a>
                             </li>
                             <li class="Economie">
-                                <i class="fas fa-dog"></i> <!--logo dog-->
-                                <a href="#"><h2>Animaux autorisés</h2></a>
+                                <i class="fas fa-dog filtres-logo"></i> <!--logo dog-->
+                                <a class="filtres-texte" href="#">Animaux autorisés</a>
                             </li>
                         </ul>
                     </div>
@@ -148,12 +148,25 @@
         </div>
 
         <aside>
-                <i class="fas fa-chart-line"></i> <!--logo graphique-->
+            <h2>Les plus populaires</h2>
+            <i class="fas fa-chart-line"></i> <!--logo graphique-->
+                <div class="item-aside">
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <div class="item-text-aside">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <b>25€</b></p>
+                        <i class="fas fa-star"></i> <!--logo étoile-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        </div>
+                </div>
                 
-            </aside> 
-
+        </aside>
 
     </section>
+    
        
     
 
