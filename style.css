@@ -1,27 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'raleway', sans-serif;
+    width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header{
     background-color: #ffffff;
     display: flex;
-    width: 1340px;
-    margin: 0 auto;
     color: #0065FC;
-}
-header div{
-    width: 1310px;
-    display: flex;
-    justify-content:space-between;
-    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
 .logo-header{
     width: auto;
+    display: inline-block;
 }
 
 .menu{
-    display: inline-block;
     width: auto;
+    
 }
 header a{
     color: #000000;
@@ -46,33 +51,30 @@ header li a:active{
 header li a:hover{
     color: #0065FC;
     border-top: 2px solid;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 section{
     background-color: #ffffff;
     display: flex;
-    justify-content: left;
-    width: 1340px;
-    margin: 0 auto;
 }
 .section1{
-    
-    display: flex;
     flex-direction: column;
     
 }
-
-
+.titres-page{
+    margin-bottom: 22px;
+}
 .titres-page h1{
     font-size: 12px;
+    margin-bottom: 16px;
 
 }
 .titres-page p{
     font-size: 10px;
 }
 .searchbar{
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 .fa-map-marker-alt{
     border-radius: 12px 0px 0px 12px;
@@ -98,57 +100,59 @@ section{
     padding: 11px;
     font-weight: bold;
 }
-
 .filtres
 {
-    flex-flow: row wrap;
-    height: 50px;
-    align-items: center;
-    display: flex;   
+    margin-bottom: 36px;
+    
+}
+.filtres h3{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-right: 22px;
 }
 
+
 .filtres ul{
-    display: flex;
-    padding-inline-start: 0px;
-    margin: 0 auto;
+    
+    display:inline-flex;
+    list-style:none;
 }
-.filtres li{
-    display: flex;
-    margin-right: 25px;
-}
-.filtres h2{
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-}
+
 .Economie{
- 	background:white;
 	border: 2px solid #d9d9d9;
     border-radius: 25px;
-    /* display: flex; */
     width: 193px;
-    /* justify-content:space-between; */
-    margin-right: 25px;
+    height: 42px;
+    margin-right: 23px;
+    
+
 }
-.Economie i{
-    display: flex;
-    padding: 14px;
-	background:#deebff;
-	border-radius: 25px;
+.filtres-logo{
+    padding: 15px;
+    margin-left: -2%;
+    margin-top: -1.5%;
+    margin-bottom: -1%;
+    border-radius: 50%;
     color: #0065FC;
+    background-color: #deebff;
+    
 }
-.Economie a{
+.filtres-texte{
     color: black;
-    margin: 0 auto;
     text-decoration: none;
-    display: flex;
+    margin-right: 22px;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: bolder;
+    
+
 }
 .info{
     flex-flow: row wrap;
     height: 30px;
     align-items: center;
     display: flex;
-    padding-top: 36px;
     padding-right: 11px;
     padding-bottom: 38px;
 }
@@ -169,7 +173,7 @@ section{
     height: 625px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 48px 41px 48px 41px;
+    /* padding: 48px 41px 48px 41px; */
     margin-right: 40px;
 }
 .section2 h2{
@@ -180,11 +184,11 @@ section{
 .item{
     background-color: #ffffff;
     width: 250px;
-    height: 200px;
     border-radius: 25px;
     padding:4px;
     margin: 16px;
     display: inline-block;
+    box-shadow: 0px 2px 4px 0px #80808059;
     
 }
 .item img{
@@ -204,14 +208,14 @@ section{
     flex-direction: row;
     color: #0065FC;
     margin: 0px;
-    font-size: 11px;
+    font-size: 13px;
 }
 .item p{
     margin: 0px;
     font-size: 13px;
 }
 .item-text{
-    margin-left: 16px;
+    padding: 11px;
 }
 
 aside{
@@ -219,5 +223,56 @@ aside{
     height: 625px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 48px 41px 48px 41px;
+    border: 48px 41px 48px 41px;
+    display: inline-block;
+    padding: 0;
+}
+aside h2{
+    display:inline-block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.item-aside{
+    background-color: #ffffff;
+    width: 345px;
+    height: 145px;
+    border-radius: 25px;
+    padding:4px;
+    margin: 16px;
+    display: inline-block;
+    box-shadow: 0px 2px 4px 0px #80808059;
+
+}
+.item-aside img{
+    width: 100%;
+    height: 70%;    
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    margin: 0px;
+
+}
+.item-aside h3{
+    display: flex;
+    font-size: 18px;
+    margin: 0px;
+
+}
+.item-aside i{
+    display: inline;
+    flex-direction: row;
+    color: #0065FC;
+    margin: 0px;
+    font-size: 11px;
+
+}
+.item-aside p{
+    margin: 0px;
+    font-size: 13px;
+
+}
+.item-text-aside{
+    margin-left: 16px;
+    
+
 }
