@@ -4,45 +4,39 @@
 }
 body{
     font-family: 'raleway', sans-serif;
-    margin-right: auto;
-    margin-left: auto;
+ 
+    padding-right: auto;
+    padding-left: auto;
 }
 
 header{
     background-color: #ffffff;
     display: flex;
     color: #0065FC;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 1340px;
-    margin-right: auto;
-    margin-left: auto;
-
+    padding: 15px 50px 30px 50px;
 }
 .logo-header{
     width: auto;
-    display: inline-block;
 }
 
 .menu{
-    width: auto;
-    
+    position : absolute;
+        top: 0;
+    left: 60%;
 }
 header a{
     color: #000000;
     text-decoration: none;
-    justify-content: space-between;
-    display: inline;
-    font-size: 10px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 42px 30px;
+    
 }
 
 header ul li{
     list-style: none;
-    display: inline;
-    padding: 0 30px;
-    position: relative;
+    float: left;
     
 }
 header li a:active{
@@ -59,35 +53,35 @@ header li a:hover{
 section{
     background-color: #ffffff;
     display: flex;
-    width: 1340px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 15px 50px 30px 50px
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 .section1{
     flex-direction: column;
-    width: 1340px;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 .titres-page{
     margin-bottom: 22px;
 }
 .titres-page h1{
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 16px;
 
 }
 .titres-page p{
-    font-size: 10px;
+    font-size: 12px;
 }
 .searchbar{
+    display: flex;
     margin-bottom: 32px;
 }
 .fa-map-marker-alt{
     border-radius: 12px 0px 0px 12px;
     color: black;
     background-color: #f2f2f2;
-    padding: 11.5px;
+    padding: 11px;
 }
 
 .searchbar input{
@@ -306,7 +300,6 @@ aside h2{
 .section3{
     width: 100%;
     margin-top: 65px;
-    width: 1340px;
     margin-right: auto;
     margin-left: auto;
 }
