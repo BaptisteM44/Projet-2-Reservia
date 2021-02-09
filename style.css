@@ -4,9 +4,6 @@
 }
 body{
     font-family: 'raleway', sans-serif;
- 
-    padding-right: auto;
-    padding-left: auto;
 }
 
 header{
@@ -15,6 +12,8 @@ header{
     color: #0065FC;
     align-items: center;
     padding: 15px 50px 30px 50px;
+    max-width: 1340px;
+    margin: 0 auto;
 }
 .logo-header{
     width: auto;
@@ -50,18 +49,15 @@ header li a:hover{
     padding-top: 40px;
 }
 
-section{
+.section1{
     background-color: #ffffff;
     display: flex;
     padding: 15px 50px 30px 50px;
-    /* margin-right: auto;
-    margin-left: auto; */
-}
-.section1{
+    max-width: 1340px;
+    margin: 0 auto;
     flex-direction: column;
-    /* margin-right: auto;
-    margin-left: auto; */
 }
+
 .titres-page{
     margin-bottom: 22px;
 }
@@ -101,9 +97,7 @@ section{
     padding: 11px;
     font-weight: bold;
 }
-.filtres{
-    
-}
+
 .filtres h3{
     font-size: 15px;
     font-weight: bolder;
@@ -172,12 +166,7 @@ section{
     border-radius: 25px;
     margin-right: 40px;
     padding: 20px;
-
 }
-.wide{
-    color: #d9d9d9;
-}
-
 .section2 h2{
     font-size: 20px;
     padding: 20px 0px 11px 16px;
@@ -185,15 +174,13 @@ section{
 .section2 h4{
     font-size: 18px;
     padding: 20px 0px 20px 16px;
-    
-    
 }
 .section2 a{
     text-decoration: none;
 }
 .item{
     background-color: #ffffff;
-    width: 250px;
+    width: 235px;
     border-radius: 25px;
     margin: 16px;
     display: inline-block;
@@ -326,180 +313,103 @@ aside h2{
 
 }
 .item-text-aside{
-    margin-left: 20px;
-    margin-top: 16px;
-    margin-right: 26px;   
-
+    margin: 16px 16px 0px 20px;
 }
-.section3{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.section3 h2{
-    font-size: 16px;
-    margin-bottom: 27px;
-    
-} 
-
-.section3-image1{
-    width: 310px;
-    height: 450px;
+.hebergement {
+    max-width: 1340px;
+    margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px 0px #80808059;
-    position: relative;
-    margin-right: 50px;
-    
+    display: flex;
+    padding: 15px 50px 30px 50px;
 }
-.section3-image1 img{
+
+.activity {
+    max-width: 1340px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 50px 30px 50px;
+}
+
+.activity .title {
+    padding: 20px 0px;
+}
+
+.activity .links {
+    display: flex;
+}
+
+.activity .links .bloc {
     width: 100%;
+    height: 450px;
+}
+.bloc_1{
+    margin-right: 42px;
+}
+.bloc_2{
+    margin-right: 42px;
+}
+.bloc_3{
+    margin-right: 42px;
+}
+.activity a,
+.activity a:visited {
+    overflow: hidden;
+    border-radius: 25px;
+    color: #000;
+    position: relative;
     height: 100%;
-    border-radius: 25px 25px 25px 25px;
-    display: flex;
-    margin: 0px;
-    object-fit: cover;
-}
-.section3-image1 div{
-    background-color: white;
-    height: 55px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 0px 25px 25px;
-
-}
-.section3-image1 p{
-    font-size: 13px;
+    display: block;
     font-weight: bold;
-    margin: 23px 0px 20px 20px;
+    font-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 4px 0px #cccccc;
+    transition: all 0.4s ease;
 }
 
+.activity a:hover,
+.activity a:focus {
+    transform: scale(1.03);
+}
 
-.block-image2-3{
-    display: inline-block;
-    width: 310px;
-    height: 450px;
-    margin-right: 43px;
-}
-.block-image2-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px 25px 25px 25px;
-    display: flex;
-    margin: 0px;
-    object-fit: cover;
-}
-.block-image2-3 p{
-    font-size: 13px;
-    font-weight: bold;
-    margin: 23px 0px 20px 20px;
-}
-.section3-image2{
-    width: 301px;
-    height: 55%;
-    background-color: #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px 0px #80808059;
-    position: relative;
-    margin-bottom: 5%;
-}
-.section3-image2 div{
-    background-color: white;
-    height: 55px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.activity span {
     position: absolute;
+    background-color: #fff;
     bottom: 0;
     left: 0;
-    border-radius: 0px 0px 25px 25px;
+    z-index: 100;
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px 20px;
 }
 
-.section3-image3{
-    width: 301px;
-    height: 40%;
-    background-color: #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px 0px #80808059;
-    position: relative;
+.bloc_2 .bloc_top{
+    height:56%;
 }
-.section3-image3 div{
-    background-color: white;
-    height: 55px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 0px 25px 25px;
+.bloc_2 .bloc_bot {
+    height: 34%;
+    margin-top: 42px;
 }
-
-
-.block-image5-6{
-    display: inline-block;
-    width: 301px;
-    height: 450px;
+.bloc_4 .bloc_top{
+    height:40%;
 }
-.section3-image5{
-    width: 301px;
-    height: 45%;
-    background-color: #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px 0px #80808059;
-    position: relative;
-    margin-bottom: 5%;
-}
-.section3-image5 div{
-    background-color: white;
-    height: 55px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 0px 25px 25px;
-}
-
-.section3-image6{
-    width: 301px;
+.bloc_4 .bloc_bot {
     height: 50%;
-    background-color: #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px 0px #80808059;
-    position: relative;
+    margin-top: 42px;
 }
-.section3-image6 div{
-    background-color: white;
-    height: 55px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 0px 25px 25px;
-}
+
 footer{
     background-color: #f2f2f2;
     margin-top: 50px;
+    
 
 }
 .footer-text{
     display: flex;
-    padding: 0px 20px 0px 50px;
     justify-content: space-between;
-    width: 65%;
+    max-width: 1340px;
+    margin: 0 auto;
 }
 .footer-partie{
     padding: 30px 20px 30px 0px;
