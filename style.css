@@ -18,7 +18,6 @@ header{
 .logo-header{
     width: auto;
 }
-
 .menu{
     position : absolute;
         top: 0;
@@ -30,18 +29,15 @@ header a{
     display: inline-block;
     font-size: 14px;
     padding: 42px 30px;
-    
 }
 
 header ul li{
     list-style: none;
     float: left;
-    
 }
 header li a:active{
     color: #0065FC;
     border-top: 2px solid;
-    
 }
 header li a:hover{
     color: #0065FC;
@@ -98,66 +94,74 @@ header li a:hover{
     font-weight: bold;
 }
 
-.filtres h3{
-    font-size: 15px;
-    font-weight: bolder;
-}
-
-
-.filtres ul{
-    
-    display:flex;
-    list-style:none;
-    position: absolute;
+.filtre{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 940px;
 }
-
-.Economie{
-	border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    display: inline-block;
-    position: relative;
-    top: 0px;
-    left: 20px;
-    margin-right: 20px;
+.filtre p{
+    font-size: 14px;
+    font-weight: bold;
 }
-.filtres-logo{
+.filtre-complete{
+    border-radius: 50px;
     height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    color: #0065FC;
-    background-color: #deebff;
-    padding: 5px;
-    
-    
-}
-.filtres-texte{
-    color: black;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bolder;
-    padding: 20px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    border: 2px solid #d9d9d9;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.filtre-complete:hover{
+    color: #0065FC;
+}
+.filtre-texte{
+    margin: 0 15px;
+    font-size: 14px;
+}
+.filtre-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -2px;
+}
+
+.filtre-icon i{
+    color: #0065FC;
+    width: auto;
+    height: auto;
 }
 .info{
-    height: 30px;
     align-items: center;
     display: flex;
-    padding:80px 0px 20px 0px;
-    
+    padding-top: 20px;
 }
-.info p{
-    display: flex;
-}
-.info i{
-    height: 25px;
-    width: 25px;
-    padding: 0px;
-    border-radius: 50%;
+.info div{
+    height: 27px;
+    width: 27px;
+    border-radius: 100px;
     border: 1px solid #d9d9d9;
-    text-align: center;
+    align-items: center;
     margin-right: 10px;
     color: #0065FC;
+    display: flex;
+    justify-content: center;
+
+}
+.hebergement {
+    max-width: 1340px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    padding: 15px 50px 30px 50px;
 }
 .section2{
     width: 880px;
@@ -175,8 +179,16 @@ header li a:hover{
     font-size: 18px;
     padding: 20px 0px 20px 16px;
 }
-.section2 a{
+.section2 a,
+.section2 :visited{
     text-decoration: none;
+    transition: all 0.4s ease;
+    color: black;
+}
+.section2 a:hover,
+.section2 a:focus {
+    transform: scale(1.03);
+    color: #636363;
 }
 .item{
     background-color: #ffffff;
@@ -236,12 +248,18 @@ aside{
     border-radius: 25px;
     padding: 20px;
     display: inline-block;
-    
 }
-aside a{
+aside a,
+aside a:visited{
     text-decoration: none;
+    transition: all 0.4s ease;
+    color: black;
 }
-
+aside a:hover,
+aside a:focus {
+    transform: scale(1.03);
+    color: #636363;
+}
 aside h2{
     font-size: 20px;
     
@@ -298,15 +316,12 @@ aside h2{
     color: #0065FC;
     margin: 0px;
     font-size: 12px;
-    
 }
 .item-aside .less {
     color: #d9d9d9;
     margin: 0px;
     font-size: 12px;
 }
-
-
 .item-aside p{
     margin-bottom: 30px;
     font-size: 13px;
@@ -315,21 +330,12 @@ aside h2{
 .item-text-aside{
     margin: 16px 16px 0px 20px;
 }
-.hebergement {
-    max-width: 1340px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    display: flex;
-    padding: 15px 50px 30px 50px;
-}
-
 .activity {
     max-width: 1340px;
     margin: 0 auto;
     display: block;
     padding: 15px 50px 30px 50px;
 }
-
 .activity .title {
     padding: 20px 0px;
 }
@@ -367,13 +373,11 @@ aside h2{
     box-shadow: 0px 2px 4px 0px #cccccc;
     transition: all 0.4s ease;
 }
-
 .activity a:hover,
 .activity a:focus {
     transform: scale(1.03);
 }
-
-.activity span {
+.activity span{
     position: absolute;
     background-color: #fff;
     bottom: 0;
@@ -383,7 +387,6 @@ aside h2{
     width: calc(100% - 40px);
     padding: 20px 20px;
 }
-
 .bloc_2 .bloc_top{
     height:56%;
 }
@@ -398,21 +401,19 @@ aside h2{
     height: 50%;
     margin-top: 42px;
 }
-
 footer{
     background-color: #f2f2f2;
     margin-top: 50px;
-    
-
 }
 .footer-text{
     display: flex;
-    justify-content: space-between;
+    align-self: flex-start;
     max-width: 1340px;
     margin: 0 auto;
+    padding: 15px 50px 30px 50px;
 }
 .footer-partie{
-    padding: 30px 20px 30px 0px;
+    padding: 25px 200px 10px 0px;
 }
 footer h2{
     font-size: 16px;
@@ -422,6 +423,14 @@ footer p{
     font-size: 13px;
     margin-bottom: 20px;
 }
-footer a{
+footer a,
+footer a:visited{
     text-decoration: none;
+    transition: all 0.4s ease;
+    color: black;
+}
+footer a:hover,
+footer a:focus {
+    transform: scale(1.03);
+    color: #636363;
 }
