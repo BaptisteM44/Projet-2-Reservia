@@ -58,12 +58,12 @@ header li a:hover{
     margin-bottom: 22px;
 }
 .titres-page h1{
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 16px;
 
 }
 .titres-page p{
-    font-size: 12px;
+    font-size: 15px;
 }
 .searchbar{
     display: flex;
@@ -372,6 +372,7 @@ aside h2{
     background-size: cover;
     box-shadow: 0px 2px 4px 0px #cccccc;
     transition: all 0.4s ease;
+    min-width: 305px;
 }
 .activity a:hover,
 .activity a:focus {
