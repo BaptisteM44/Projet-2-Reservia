@@ -21,7 +21,7 @@ header{
 .menu{
     position : absolute;
         top: 0;
-    left: 52%;
+    left: 68%;
 }
 header a{
     color: #000000;
@@ -37,7 +37,6 @@ header ul li{
 }
 header li a:active{
     color: #0065FC;
-    border-top: 2px solid;
 }
 header li a:hover{
     color: #0065FC;
@@ -100,10 +99,6 @@ header li a:hover{
     justify-content: space-between;
     width: 940px;
 }
-.filtre p{
-    font-size: 14px;
-    font-weight: bold;
-}
 .filtre-complete{
     border-radius: 50px;
     height: 35px;
@@ -115,12 +110,16 @@ header li a:hover{
     font-weight: bold;
     transition: 0.5s;
 }
-.filtre-complete:hover{
-    color: #0065FC;
+.filtre h2{
+    font-size: 14px;
 }
-.filtre-texte{
+.filtre-texte,
+.filtre-complete:hover{
     margin: 0 15px;
     font-size: 14px;
+    text-decoration: none;
+    color: #000;
+
 }
 .filtre-icon {
     width: 40px;
@@ -188,7 +187,7 @@ header li a:hover{
 .section2 a:hover,
 .section2 a:focus {
     transform: scale(1.03);
-    color: #636363;
+    color: #0065FC;
 }
 .item{
     background-color: #ffffff;
@@ -214,13 +213,13 @@ header li a:hover{
 }
 .item h3{
     display: flex;
-    font-size: 13px;
+    font-size: 16px;
     margin: 0px;
     margin-bottom: 5px;
 }
 .item p{
     margin: 0px;
-    font-size: 9px;
+    font-size: 13px;
     margin-bottom: 2px;
 }
 .item i:not(.less){
@@ -258,7 +257,7 @@ aside a:visited{
 aside a:hover,
 aside a:focus {
     transform: scale(1.03);
-    color: #636363;
+    color: #0065FC;
 }
 aside h2{
     font-size: 20px;
@@ -299,7 +298,7 @@ aside h2{
 }
 .item-aside h3{
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 14px;
 
 }
@@ -348,15 +347,31 @@ aside h2{
     width: 100%;
     height: 450px;
 }
-.bloc_1{
+.bloc_1 a {
+    background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    margin-right: 42px;
+} 
+.bloc_2 a {
+    margin-right: 42px;
+    background-image: url('images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg')
+}
+.bloc_bot a{
+    margin-right: 42px;
+    background-image: url('images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')
+}
+.bloc_3 a{
+    background-image: url('images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    margin-right: 42px;
+    
+}
+.bloc_4 a{
+    background-image: url('images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
     margin-right: 42px;
 }
-.bloc_2{
-    margin-right: 42px;
+.bloc_bot2 a{
+    background-image: url('images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
 }
-.bloc_3{
-    margin-right: 42px;
-}
+
 .activity a,
 .activity a:visited {
     overflow: hidden;
@@ -366,7 +381,7 @@ aside h2{
     height: 100%;
     display: block;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,23 +430,23 @@ footer{
 }
 .footer-partie{
     padding: 25px 200px 10px 0px;
+    flex-direction: column;
+    display: flex;
 }
 footer h2{
     font-size: 16px;
     margin-bottom: 27px;
-}
-footer p{
-    font-size: 13px;
-    margin-bottom: 20px;
 }
 footer a,
 footer a:visited{
     text-decoration: none;
     transition: all 0.4s ease;
     color: black;
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 footer a:hover,
 footer a:focus {
     transform: scale(1.03);
-    color: #636363;
+    color: #0065fc;
 }
