@@ -6,43 +6,60 @@ body{
     font-family: 'raleway', sans-serif;
 }
 header{
-    background-color: #ffffff;
     display: flex;
     color: #0065FC;
     align-items: center;
-    padding: 15px 50px 30px 50px;
+    justify-content: space-between;
+    padding: 0px 50px 30px 50px;
     max-width: 1340px;
     margin: 0 auto;
+    /* position: relative; */
+}
+.header-link{
+    width: 150px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid transparent;
 }
 .logo-header img{
     width: 100px;
     height: 75px;
 }
 .menu{
-    position : absolute;
-        top: 0;
-    left: 68%;
+    /* height: 105px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* position: absolute;
+        top: auto;
+        right: 9em; */
+    margin-top: -2px;
+}
+/* .signup{
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+#inscription{
+    color: #0065FC;
+    font-weight: bold;
 }
 header a{
     color: #000000;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
-    padding: 42px 30px;
+    /* position: relative; */
 }
-
-header ul li{
-    list-style: none;
-    float: left;
-}
-header li a:active{
-    color: #0065FC;
-}
-header li a:hover{
+.nav-hebergement:hover,
+.nav-activity:hover{
     color: #0065FC;
     border-top: 2px solid;
-    padding-top: 40px;
+    padding-top: 0px;
+    margin-top: 2px;
 }
+
 
 .section1{
     background-color: #ffffff;
@@ -113,14 +130,21 @@ header li a:hover{
 .filtre h2{
     font-size: 14px;
 }
-.filtre-texte,
-.filtre-complete:hover{
+.filtre-texte{
     margin: 0 15px;
     font-size: 14px;
     text-decoration: none;
     color: #000;
-
 }
+.filtre-complete:hover>div>i{
+    color: black;
+    transition: 0.5s;
+}
+.filtre-complete:hover>a {
+    color: #0065FC;
+    transition: 0.5s;
+}
+
 .filtre-icon {
     width: 40px;
     height: 40px;
@@ -161,6 +185,7 @@ header li a:hover{
     background-color: #ffffff;
     display: flex;
     padding: 15px 50px 30px 50px;
+    align-items: flex-start;
 }
 .section2{
     width: 880px;
@@ -173,9 +198,11 @@ header li a:hover{
 .link-more{
     font-size: 20px;
     padding: 20px 0px 11px 16px;
+    font-weight: bold;
+    display: flex;
 }
-.section2 h4{
-    font-size: 18px;
+.section2 h2{
+    font-size: 20px;
     padding: 20px 0px 20px 16px;
 }
 .section2 a,
@@ -341,32 +368,33 @@ aside h2{
 
 .activity .links {
     display: flex;
+    justify-content: space-between;
 }
 
 .activity .links .bloc {
-    width: 100%;
+    width: auto;
     height: 450px;
 }
 .bloc_1 a {
     background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    margin-right: 42px;
+    /* margin-right: 42px; */
 } 
 .bloc_2 a {
-    margin-right: 42px;
+    /* margin-right: 42px; */
     background-image: url('images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg')
 }
 .bloc_bot a{
-    margin-right: 42px;
+    /* margin-right: 42px; */
     background-image: url('images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')
 }
 .bloc_3 a{
     background-image: url('images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    margin-right: 42px;
+    /* margin-right: 42px; */
     
 }
 .bloc_4 a{
     background-image: url('images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-    margin-right: 42px;
+    /* margin-right: 42px; */
 }
 .bloc_bot2 a{
     background-image: url('images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
@@ -427,9 +455,10 @@ footer{
     max-width: 1340px;
     margin: 0 auto;
     padding: 15px 50px 30px 50px;
+    justify-content: space-evenly;
 }
 .footer-partie{
-    padding: 25px 200px 10px 0px;
+    padding: 25px 0;
     flex-direction: column;
     display: flex;
 }
@@ -452,15 +481,13 @@ footer a:focus {
 }
 
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1160px)
 {
     header{
-        align-items: flex-start;
+        /* align-items: flex-start; */
     }
     .menu {
-        position: absolute;
-        top: 0;
-        left: 66%;
+        
     }
     .activity a{
         min-width: 263px;
@@ -475,9 +502,7 @@ footer a:focus {
         width: auto;
     }
     .menu {
-        position: absolute;
-        top: 0;
-        left: 57%;
+       
     }
     .filtre {
         width: auto;
@@ -508,10 +533,11 @@ footer a:focus {
 @media all and (max-width: 768px){
 
 .menu {
-    position: absolute;
+    position: inherit;
     top: 0;
-    left: 43%;
+    right: 0;
     padding-bottom: 20px;
+    flex-wrap: wrap-reverse;
 }
 
 }
