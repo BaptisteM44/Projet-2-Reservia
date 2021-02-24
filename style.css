@@ -265,6 +265,8 @@ header a{
 
 .item-text{
     padding: 6px 12px 6px 11px;
+    text-align: initial;
+
 }
 
 aside{
@@ -355,6 +357,7 @@ aside h2{
 }
 .item-text-aside{
     margin: 16px 16px 0px 20px;
+    text-align: initial;
 }
 .activity {
     max-width: 1340px;
@@ -409,7 +412,7 @@ aside h2{
     height: 100%;
     display: block;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -483,65 +486,163 @@ footer a:focus {
 
 @media screen and (max-width: 1160px)
 {
-    header{
-        /* align-items: flex-start; */
-    }
-    .menu {
-        
-    }
     .activity a{
         min-width: 263px;
+    }
+    .item{
+        margin: auto;
     }
 }
 
 @media all and (max-width: 1024px)
 {
-    header{
-        flex-direction: column;
-        align-items: flex-start;
-        width: auto;
-    }
-    .menu {
-       
-    }
     .filtre {
         width: auto;
+        flex-wrap: wrap;
+    }
+    .filtre-complete{
+        margin: 0 5px 10px 1px;
+    }
+    .filtre h2{
+        width: 100%;
+        margin-bottom: 10px;
     }
     .hebergement {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
     }
     .section2{
         margin: auto;
         width: auto;
+        text-align: center;
     }
     aside{
         margin-bottom: 20px;
         width: auto;
+        text-align: center;
     }
-    /* .activity .links .bloc{
-        height: 350px;
+    .item-aside{
+        margin: 8px;
+    }
+    .item{
         width: 250px;
-    } */
+        display: inline-block;
+        margin: 8px;
+    }
+    .activity .links{
+        display: block;
+    }
     .activity a{
-        min-width: auto;
+        height: 250px !important;
+        width: 100% !important;
+        margin: 12px 0;
+        flex-direction: column;
+    }
+    .activity .links .bloc{
+        height: auto;
+        margin: auto;
+    }
+    .bloc_2 .bloc_bot,
+    .bloc_4 .bloc_bot{
+        margin-top: 5px;
     }
 }
 
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px)
+{
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        padding: 0px;
+    }
+    .section1,
+    .activity{
+        padding: 10px 10px;
+    }
+    .hebergement{
+        padding: 0px;
+    }
+    .logo-header{
+        padding-left: 10px;
+    }
+    .menu{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
 
-.menu {
-    position: inherit;
-    top: 0;
-    right: 0;
-    padding-bottom: 20px;
-    flex-wrap: wrap-reverse;
+    .nav-hebergement:hover,
+    .nav-activity:hover{
+        color: #0065FC;
+        border-top: 0px solid;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .nav-activity,
+    .nav-hebergement{
+        border-bottom: 3px solid #0065FC;
+            border-top: 0;
+
+    }
+    .nav-hebergement{
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-activity{
+        width: 50%;
+        border-bottom: 3px solid #f1f2f3;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inscription{
+        position: absolute;
+            right: 45px;
+            top: 30px;
+            height: auto;
+            width: auto;
+    }
+    .section2{
+        padding: 0px;
+        margin: 10px auto;
+        background-color: white;
+    }
+    .section2 h2{
+        padding: 4px;
+    }
+    aside {
+        padding: 0px;    
+        margin: 10px auto;
+        width:min-content;
+    }
+    .footer-text{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .item {
+        width: -webkit-fill-available;
+    }
 }
 
+@media all and (max-width: 370px)
+{
+    .item-text-aside{
+        margin: 10px 10px;
+    }
+    .item-aside{
+        width: auto;
+    }
+    aside{
+        width: auto;
+        border-radius: 0px;
+    }
+
 }
-
-
-
-@media all and (min-width: 340px) and (max-width: 768px)
