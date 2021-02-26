@@ -5,6 +5,8 @@
 body{
     font-family: 'raleway', sans-serif;
 }
+
+/*_________________Header___________________*/
 header{
     display: flex;
     color: #0065FC;
@@ -48,7 +50,7 @@ header a{
     margin-top: 2px;
 }
 
-
+/*_________________Section 1___________________*/
 .section1{
     background-color: #ffffff;
     display: flex;
@@ -193,6 +195,8 @@ header a{
     font-weight: bold;
     display: flex;
 }
+
+/*_________________Section 2 Hébergement / Populaires___________________*/
 .section2 h2{
     font-size: 20px;
     padding: 20px 0px 20px 16px;
@@ -267,6 +271,7 @@ aside{
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 20px;
+    padding-bottom: 39px;
     display: inline-block;
 }
 aside a,
@@ -351,6 +356,7 @@ aside h2{
     margin: 16px 16px 0px 20px;
     text-align: initial;
 }
+/*_________________Section3 activity___________________*/
 .activity {
     max-width: 1340px;
     margin: 0 auto;
@@ -440,6 +446,9 @@ aside h2{
     height: 50%;
     margin-top: 42px;
 }
+
+/*_________________Footer___________________*/
+
 footer{
     background-color: #f2f2f2;
     margin-top: 50px;
@@ -485,6 +494,7 @@ footer a:focus {
         margin: auto;
     }
 }
+/*_________________Tablette 1024px___________________*/
 
 @media all and (max-width: 1024px)
 {
@@ -499,15 +509,6 @@ footer a:focus {
         width: 100%;
         margin-bottom: 10px;
     }
-    .hebergement {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .section2{
-        margin: auto;
-        width: auto;
-        text-align: center;
-    }
     aside{
         margin-bottom: 20px;
         width: auto;
@@ -516,10 +517,19 @@ footer a:focus {
     .item-aside{
         margin: 8px;
     }
+    .hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .item{
         width: 250px;
         display: inline-block;
         margin: 8px;
+    }
+    .section2{
+            margin: auto;
+            width: auto;
+            text-align: center;
     }
     .activity .links{
         display: block;
@@ -549,13 +559,6 @@ footer a:focus {
         width: auto;
         padding: 0px;
     }
-    .section1,
-    .activity{
-        padding: 10px 10px;
-    }
-    .hebergement{
-        padding: 0px;
-    }
     .logo-header{
         padding-left: 10px;
     }
@@ -565,7 +568,6 @@ footer a:focus {
         height: auto;
         margin-top: 10px;
     }
-
     .nav-hebergement:hover,
     .nav-activity:hover{
         color: #0065FC;
@@ -613,6 +615,22 @@ footer a:focus {
             height: auto;
             width: auto;
     }
+    aside {
+        padding: 0px;    
+        margin: 10px auto;
+        width:min-content;
+    }
+    .section1,
+    .activity{
+        padding: 10px 10px;
+    }
+    .item {
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .hebergement{
+        padding: 0px;
+    }
     .section2{
         padding: 0px;
         margin: 10px auto;
@@ -621,34 +639,26 @@ footer a:focus {
     .section2 h2{
         padding: 4px;
     }
-    aside {
-        padding: 0px;    
-        margin: 10px auto;
-        width:min-content;
-    }
     .footer-text{
         flex-direction: column;
         margin: 0 auto;
     }
-    .item {
-        width: -webkit-fill-available;
-        width: -moz-available;
-    }
 }
-
+/*_________________Smartphones___________________*/
 @media all and (max-width: 370px)
 {
+    .info div{
+    width: 38px;
+    }
+    aside{
+        width: auto;
+        border-radius: 0px;
+    }
     .item-text-aside{
         margin: 10px 10px;
     }
     .item-aside{
         width: auto;
     }
-    aside{
-        width: auto;
-        border-radius: 0px;
-    }
-    .info div {
-    width: 38px;
-    }
+    
 }
